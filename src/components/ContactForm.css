@@ -1,0 +1,90 @@
+.cform {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 640px;
+}
+
+.cform-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.cform label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.cform input,
+.cform textarea {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--stone-line);
+  padding: 0.7rem 0.8rem;
+}
+
+.cform input:focus,
+.cform textarea:focus {
+  border-color: var(--blueprint);
+}
+
+.cform-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cform-fieldset legend {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  padding: 0;
+  margin-bottom: 0.6rem;
+}
+
+.cform-radios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.cform-radio {
+  flex-direction: row !important;
+  align-items: center;
+  gap: 0.4rem !important;
+  border: 1px solid var(--stone-line);
+  padding: 0.45rem 0.8rem;
+  font-size: 0.85rem;
+  color: var(--ink);
+}
+
+.cform button {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+}
+
+.cform-error {
+  color: var(--brick);
+  font-size: 0.85rem;
+}
+
+.cform-done {
+  max-width: 480px;
+  padding: 2rem 0;
+}
+
+.cform-done p {
+  color: var(--ink-soft);
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 620px) {
+  .cform-row {
+    grid-template-columns: 1fr;
+  }
+}

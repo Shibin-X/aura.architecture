@@ -1,0 +1,31 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 4rem;
+}
+
+.contact-block {
+  padding-bottom: 2rem;
+}
+
+.contact-block p {
+  margin-top: 0.5rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+.contact-block a:hover {
+  color: var(--blueprint);
+}
+
+.contact-form-col > .eyebrow {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 860px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

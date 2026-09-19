@@ -1,0 +1,32 @@
+.pgallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.pgallery-item {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--paper-dim);
+}
+
+.pgallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pgallery-item:first-child {
+  grid-column: 1 / -1;
+  aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 620px) {
+  .pgallery {
+    grid-template-columns: 1fr;
+  }
+
+  .pgallery-item:first-child {
+    aspect-ratio: 4 / 3;
+  }
+}

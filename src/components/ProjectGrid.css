@@ -1,0 +1,48 @@
+.pgrid-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.pgrid-filter {
+  background: none;
+  border: 1px solid var(--stone-line);
+  padding: 0.45rem 1rem;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.pgrid-filter:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.pgrid-filter.is-active {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+
+.pgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 1.5rem;
+}
+
+.pgrid-empty {
+  color: var(--ink-soft);
+  padding: 3rem 0;
+}
+
+@media (max-width: 960px) {
+  .pgrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 620px) {
+  .pgrid {
+    grid-template-columns: 1fr;
+  }
+}
