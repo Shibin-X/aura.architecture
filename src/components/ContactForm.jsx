@@ -99,7 +99,7 @@ export default function ContactForm() {
 
       <label>
         Expected Start Date
-        <input type="text" name="startDate" placeholder="e.g. Q2 2026" />
+        <input type="text" name="startDate" placeholder="dd/mm/yyyy" />
       </label>
 
       <label>
